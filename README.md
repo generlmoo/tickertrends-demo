@@ -161,25 +161,6 @@ If port 3000 is busy, pick another (e.g., 3001) and open that URL.
 ## Usage
 - Frontend UI at http://localhost:3000 (or your chosen port). Submit a term to fetch/store and view the series + growth leaderboard.
 - If blocked upstream, enable mock mode and retry.
-│   └── src
-│       ├── pages
-│       │   ├── _app.tsx
-│       │   └── index.tsx
-│       ├── components
-│       │   ├── Layout.tsx
-│       │   ├── TrendChart.tsx
-│       │   ├── TermForm.tsx
-│       │   └── GrowthTable.tsx
-│       ├── lib
-│       │   └── api.ts
-│       ├── styles
-│       │   ├── globals.css
-│       │   └── neon-theme.css
-│       └── types
-│           └── index.ts
-└── scripts
-    └── seed.ts
-```
 
 ## Setup Instructions
 
