@@ -1,0 +1,21 @@
+{
+  "name": "tickertrends-demo",
+  "version": "1.0.0",
+  "description": "A demo project to scrape Muckrack timeseries data for keywords and visualize it.",
+  "main": "index.js",
+  "scripts": {
+    "dev": "concurrently \"npm run dev --prefix backend\" \"npm run dev --prefix frontend\"",
+    "build": "npm run build --prefix frontend",
+    "start": "npm run start --prefix backend",
+    "seed": "ts-node scripts/seed.ts"
+  },
+  "dependencies": {
+    "concurrently": "^6.0.0"
+  },
+  "devDependencies": {
+    "ts-node": "^10.0.0",
+    "typescript": "^4.0.0"
+  },
+  "author": "Chester Grudzinski",
+  "license": "MIT"
+}
