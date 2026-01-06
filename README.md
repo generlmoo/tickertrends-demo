@@ -47,6 +47,10 @@ cmd /c "set PORT=5002 && set MOCK_MUCKRACK=1 && npm run start"  # CMD
 ```
 Logs stay in this terminal; leave it open.
 
+#### Common startup issues (Windows)
+- If you see `EADDRINUSE ... 5000`, something else is on 5000. Either stop that process or pick another port by setting `PORT` (e.g., 5002).
+- In PowerShell, use `$env:PORT=5002; $env:MOCK_MUCKRACK=1; npm run start` (PowerShell `set` does not export to child processes). The CMD form above works as-is.
+
 ### Frontend
 1) Install deps
 ```
